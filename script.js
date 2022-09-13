@@ -119,18 +119,18 @@
 //   return result;
 // };
 // calculateAverage();
-let count = 1;
-const notas = [-3.5, 3.5, 11.0, 10.0];
-for (let nota of notas) {
-  nota[notas];
+// let count = 1;
+// const notas = [-3.5, 3.5, 11.0, 10.0];
+// for (let nota of notas) {
+//   nota[notas];
 
-  if (nota > 0 && nota <= 10) {
-    count++;
-  }
-  while (count >= 4 && count > 0) {
-    alert('Ola');
-  }
-}
+//   if (nota > 0 && nota <= 10) {
+//     count++;
+//   }
+//   while (count >= 4 && count > 0) {
+//     alert('Ola');
+//   }
+// }
 
 //   alert((nota + nota) / 2);
 // } else if(nota == 2)
@@ -140,3 +140,87 @@ for (let nota of notas) {
 // for (let nota = 0; nota <= 10; nota++) {
 
 //
+
+// ---------Idades------------
+// let count = 1;
+// const ages = [34, 56, 44, 23, -2];
+// for (let age of ages) {
+//   age[ages];
+//   if (age > 0) {
+//     let media = (age + age + age + age) / 4;
+//     console.log(media);
+//   }
+// }
+
+// VAI TER COPA
+
+// let numbers = [0, 1, 0, 2, 100, 0];
+// for (let number of numbers) {
+//   number[numbers];
+//   if (number === 0) {
+//     alert('  vai ter copa');
+//   } else if (number !== 0) {
+//     alert('vai ter duas');
+//   }
+// }
+
+// var A = Number(lines.shift());
+// var B = Number(lines.shift());
+// var C = A * 3.5 + B * 7.5;
+// var D = C / 11.0;
+// console.log(`MEDIA = ${D.toFixed(5)}`);
+
+// -------- EXERCICIO MES---------
+// let numero = prompt('digite um numero');
+
+// let mounthNames = [
+//   { mounth: 1, name: 'janeiro' },
+//   { mounth: 2, name: 'fevereiro' },
+//   { mounth: 3, name: 'março' },
+//   { mounth: 4, name: 'abril' },
+//   { mounth: 5, name: 'maio' },
+//   { mounth: 6, name: 'junho' },
+//   { mounth: 7, name: 'julho' },
+//   { mounth: 8, name: 'agosto' },
+//   { mounth: 9, name: 'setembro' },
+//   { mounth: 10, name: 'outubro' },
+//   { mounth: 11, name: 'novembro' },
+//   { mounth: 12, name: 'dezembro' },
+// ];
+
+// for (let mounthName of mounthNames) {
+//   mounthName[mounthNames];
+//   if (numero == mounthName.mounth) {
+//     alert(mounthName.name);
+//   }
+// }
+
+// -------- NUMEROS POSITIVOS---------
+// count = 0;
+// let numeros = [7, 4, -5, 19, -7, -20, 12, 24];
+// for (let numero of numeros) {
+//   numero[numeros];
+//   if (numero > 0) {
+//     count = count + 1;
+//   }
+// }
+// console.log(`${count} valores positivos`);
+
+// -------- Validação de Nota---------
+
+let soma = 0;
+let media = 0;
+let qtdNotasValidas = 0;
+let notas = [-3.5, 3.5, 11.0, 10.0, 5.0, 6.0];
+for (let nota of notas) {
+  if (nota < 0 || nota > 10) {
+    console.log('nota invalida');
+  } else {
+    soma = soma + nota;
+    qtdNotasValidas++;
+    if (qtdNotasValidas === 2) {
+      media = soma / qtdNotasValidas;
+      console.log(`media = ${media}`);
+    }
+  }
+}
